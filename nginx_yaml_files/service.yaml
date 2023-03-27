@@ -1,9 +1,10 @@
 apiVersion: apps/v1
 kind: Service
 metadata:
-  app: nginx
+  labels:
+    app: nginx
   name: nginx-service
-namespace: default
+  namespace: default
 spec:
   selector:
     app: nginx
