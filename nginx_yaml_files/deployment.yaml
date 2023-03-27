@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
+namespace: default
 metadata:
   labels:
     app: nginx
   name: nginx-deployment
-  namespace: default
 spec:
   replicas: 1
   selector:
